@@ -1,0 +1,88 @@
+What are the different data types in JavaScript?
+Number
+String
+Boolean
+Null
+Undefined
+
+Object
+Function
+BigInt
+
+Explain the difference between null and undefined in JavaScript.
+
+How does prototypal inheritance work in JavaScript?
+
+What is the event loop in JavaScript and how does it work?
+
+Explain the concept of closures in JavaScript and provide an example.
+
+How does hoisting work in JavaScript?
+
+What are the differences between let, const, and var in JavaScript?
+var: 
+var is the oldest way to declare variables in JavaScript. 
+Variables declared with var are function-scoped or globally scoped but not block-scoped. 
+They are hoisted to the top of their scope and can be accessed before they are declared. 
+var variables can be reassigned and re-declared within the same scope.
+
+let:
+let allows block-scoped variable declaration. 
+Variables declared with let are limited in scope to the block (e.g., within an if statement or for loop) where they are defined. 
+They are not hoisted to the top of their scope, so they are not accessible before their declaration. 
+let variables can be reassigned within their scope but cannot be re-declared in the same scope.
+
+const: 
+const is used to declare variables with block scope, similar to let. 
+However, variables declared with const are constant and cannot be reassigned after declaration. 
+They are useful for defining values that should not be changed. 
+Like let, const variables are not hoisted and are limited to the block where they are defined.
+
+
+
+How do you handle asynchronous operations in JavaScript?
+Asynchronous operations in JavaScript are typically handled using callbacks, promises, or async/await syntax
+
+Callbacks: 
+are a common way to handle asynchronous operations in older JavaScript code.
+You pass a function (callback) as an argument to an asynchronous function, and that function gets called once the operation completes.
+
+Promises :
+provide a more structured and powerful way to handle asynchronous operations.
+Promises represent the eventual completion or failure of an asynchronous operation and allow you to chain multiple async operations together.
+
+Async/await :
+is a more recent addition to JavaScript that provides a syntactic sugar on top of promises.
+It allows you to write asynchronous code that looks like synchronous code, making it easier to read and understand.
+
+
+
+
+***Synchronous JavaScript:***
+
+In synchronous operations, the code executes in a sequential manner, one line at a time.
+Each line of code is executed and completed before moving on to the next line.
+Synchronous operations block the execution of subsequent code until the current operation is completed.
+The code executes line by line, and each line completes before moving on to the next one.
+
+Example:
+
+console.log('First');
+console.log('Second');
+console.log('Third');
+
+
+
+***Asynchronous JavaScript:***
+
+Asynchronous operations allow JavaScript to perform tasks without blocking the execution of subsequent code.
+Asynchronous operations are typically used for tasks that may take some time to complete, such as network requests, file operations, or timers.
+Instead of blocking, JavaScript registers callbacks or uses promises/async-await to handle the results of asynchronous operations.
+
+
+
+Is javascript asynchrounous or syncrho
+
+What are arrow functions in JavaScript, and what are their advantages?
+
+How does this keyword work in JavaScript? Can you explain different contexts where this refers to different objects?

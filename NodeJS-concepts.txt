@@ -1,0 +1,58 @@
+***Child process in NodejS***
+***Worker thread in NodejS***
+***Can you briefly explain what Node.js is and how it differs from other server-side technologies?***
+
+***What are the benefits of using Node.js for server-side development?***
+
+***How do you handle asynchronous operations in Node.js?***
+
+***Can you explain the concept of streams in Node.js and provide an example of their usage?***
+
+***What is Express.js, and why is it commonly used with Node.js?***
+
+***Have you used any ORM (Object-Relational Mapping) libraries or frameworks with Node.js? If so, which ones and what was your experience with them?***
+
+***How do you handle errors and implement error handling in a Node.js application?***
+
+***What tools or strategies do you use to ensure the performance and scalability of a Node.js application?***
+
+***Can you describe the process of deploying a Node.js application to a production environment?***
+
+***Have you worked with any databases in conjunction with Node.js? Which ones, and what was your approach to database integration?***
+
+***What is the event-driven architecture in Node.js, and how does it work??***
+
+***How does Node.js handle module dependencies and what is the purpose of the package.json file??***
+
+***What are the differences between callbacks, promises, and async/await in handling asynchronous operations in Node.js??***
+
+***Can you explain the concept of middleware in Express.js and provide an example of its usage??***
+
+***How do you handle authentication and authorization in a Node.js application??***
+
+***What is clustering in Node.js, and how can it be used to improve performance??***
+
+***Have you worked with WebSocket technology in Node.js? If so, how did you implement real-time communication??***
+
+
+***What are some security best practices you follow when developing Node.js applications??***
+
+
+***If nodejs is single threaded than how it handles the concurrency?***
+
+
+Here's a brief overview of how Node.js achieves concurrency:
+
+Event Loop: At the core of Node.js is an event loop, which is responsible for managing all the asynchronous operations. The event loop continuously checks for events and executes the associated callbacks when an event occurs.
+
+Non-Blocking I/O: Node.js utilizes non-blocking I/O operations, which means that when an I/O operation, such as reading from a file or making an HTTP request, is initiated, Node.js doesn't block the execution of other code while waiting for the operation to complete. Instead, it registers a callback function and continues executing the next statements.
+
+Callbacks and Event-driven Programming: When an I/O operation completes, Node.js invokes the corresponding callback function, which allows the application to continue processing the result. This approach is known as event-driven programming because the flow of the program is determined by events and their associated callbacks.
+
+Asynchronous APIs: Node.js provides a wide range of asynchronous APIs for various tasks, such as file system operations, network communication, and database access. These APIs are designed to work seamlessly with the event loop and allow developers to write non-blocking code.
+
+Worker Threads: Although Node.js is single-threaded, it also provides a Worker Threads module that allows you to create additional threads to perform CPU-intensive tasks. These worker threads can run parallel to the main event loop and improve performance in scenarios where heavy computation is involved.
+
+
+Promises:
+Promises in JavaScript are a mechanism for handling asynchronous operations and managing the flow of asynchronous code. 
